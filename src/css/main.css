@@ -1668,11 +1668,12 @@ body.menu-is-open {
   padding: 0;
   outline: 0;
   border: none;
+  margin-left: -50px;
 }
 
 .header-logo img {
   width: 155px;
-  height: 36px;
+  height: 155px;
 }
 
 /* ------------------------------------------------------------------- 
@@ -2020,10 +2021,10 @@ body.menu-is-open {
   }
 
   .header-logo img {
-    width: 150px;
-    height: 35px;
+    width: 110px;
+    height: 110px;
   }
-
+  .header-logo img{ margin-left: 20px;}
   .header-nav {
     width: calc(100% - 40px);
   }
