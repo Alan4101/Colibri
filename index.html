@@ -28,11 +28,14 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap" rel="stylesheet">
- <!--================================ -->
-    <!--<link rel="apple-touch-icon" sizes="180x180" href="./src/favicon/apple-touch-icon.png">-->
-    <!--<link rel="icon" type="image/png" sizes="32x32" href="./src/favicon/favicon-32x32.png">-->
-    <!--<link rel="icon" type="image/png" sizes="16x16" href="./src/favicon/favicon-16x16.png">-->
-    <!--<link rel="manifest" href="./src/favicon/site.webmanifest">-->
+
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+
+    <script>
+        function onSubmit(token) {
+            document.getElementById("contactForm").submit();
+        }
+    </script>
 
 </head>
 
@@ -78,7 +81,7 @@
                   
                 <ul class="header-nav__social">
                     <li>
-                        <a href="#0"><i class="fab fa-facebook"></i></a>
+                        <a target="_blank" href="https://www.facebook.com/colibri.development.5"><i class="fab fa-facebook"></i></a>
                     </li>
                     <li>
                         <a href="#0"><i class="fab fa-instagram"></i></a>
@@ -130,13 +133,19 @@
 
         <ul class="home-social">
             <li>
-                <a href="#0"><i class="fab fa-facebook-f" aria-hidden="true"></i><span>Facebook</span></a>
+                <a target="_blank" href="https://www.facebook.com/colibri.development.5"><i class="fab fa-facebook-f" aria-hidden="true"></i><span>Facebook</span></a>
             </li>
             <li>
                 <a href="#0"><i class="fab fa-instagram" aria-hidden="true"></i><span>Instagram</span></a>
             </li>
             <li>
                 <a href="#0"><i class="fab fa-telegram" aria-hidden="true"></i><span>Telegram</span></a>
+            </li>
+            <li>
+                <a href="#">RU<span>Рус</span></a>
+            </li>
+            <li>
+                <a href="#">EN<span>En</span></a>
             </li>
 
         </ul> <!-- end home-social -->
@@ -391,23 +400,28 @@
                 <div class="masonry__brick" data-aos="fade-up">
                     <div class="item-folio">
                             
+                        <!--<div class="item-folio__thumb">-->
+                            <!--<a href="./src/images/portfolio/gallery/g-beetle.jpg" class="thumb-link" title="The Beetle Car" data-size="1050x700">-->
+                                <!--<img src="/src/images/portfolio/the-beetle.jpg"-->
+                                     <!--srcset="./src/images/portfolio/the-beetle.jpg 1x, ./src/images/portfolio/the-beetle@2x.jpg 2x" alt="">-->
+                            <!--</a>-->
+                        <!--</div>-->
                         <div class="item-folio__thumb">
-                            <a href="./src/images/portfolio/gallery/g-beetle.jpg" class="thumb-link" title="The Beetle Car" data-size="1050x700">
-                                <img src="/src/images/portfolio/the-beetle.jpg"
-                                     srcset="./src/images/portfolio/the-beetle.jpg 1x, ./src/images/portfolio/the-beetle@2x.jpg 2x" alt="">
+                            <a href="./src/images/colibri/dnistermetal.png" class="thumb-link" title="DnisterMetal" data-size="1911x965">
+                                <img src="./src/images/colibri/dnistermetal.png"
+                                     srcset="./src/images/colibri/dnistermetal.png 1x, ./src/images/colibri/dnistermetal.png 2x" alt="">
                             </a>
                         </div>
-
                         <div class="item-folio__text">
                             <h3 class="item-folio__title">
-                                The Beetle
+                                Dnistermetal
                             </h3>
                             <p class="item-folio__cat">
                                 Web Development
                             </p>
                         </div>
 
-                        <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link">
+                        <a href="http://dnistermetal.com/" class="item-folio__project-link" title="Project link">
                             <i class="icon-link"></i>
                         </a>
 
@@ -567,7 +581,7 @@
         <div class="row section-header text-center narrow" data-aos="fade-up">
             <div class="col-full">
                 <h2 class="display-1">Contact</h2>
-                <h3 class="subhead">Get In Touch.</h3>
+                <h3 class="subhead">Get In Touch</h3>
             </div>
         </div> <!-- end section-header -->
 
@@ -578,7 +592,7 @@
                 <h5>Send Us A Message</h5>
 
                 <!-- form -->
-                <form name="contactForm" id="contactForm" method="post">
+                <form name="contactForm" id="contactForm" method="POST" action="src/send.php">
 
                     <div class="form-field">
                         <input name="contactName" type="text" id="contactName" placeholder="Name" value="" minlength="2" required="">
@@ -602,7 +616,7 @@
                     </div>
 
                     <div class="form-field">
-                        <button class="submitform">Submit</button>
+                        <button class="submitform submit-btn">Submit</button>
 
                         <div style="display: none;" id="submit-loader">
                             <div class="text-loader">Sending...</div>
@@ -640,8 +654,7 @@
                 <div class="cinfo">
                     <h6>Email Us At</h6>
                     <p>
-                        someone@infinitysite.com<br>
-                        info@infinitysite.com
+                        colibri.dev.info@gmail.com
                     </p>
                 </div> <!-- end cinfo -->
 
