@@ -1865,7 +1865,9 @@ body.menu-is-open {
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
-
+.header-main_title, .header-main-subtitle{
+  font-family: 'Josefin Sans', sans-serif !important;
+}
 /* menu is open
  * ----------------------------------------------- */
 .menu-is-open .header-nav {
@@ -3702,8 +3704,8 @@ html.no-csstransitions .home-content__main {
 }
 .s_contact{
   position: relative;
-  padding-top: 18rem;
-  padding-bottom: 18rem;
+  padding-top: 10.2rem;
+  padding-bottom: 10.2rem;
 }
 /* ------------------------------------------------------------------- 
  * responsive:
