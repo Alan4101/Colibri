@@ -102,13 +102,8 @@
 
             <div class="row home-content__main">
 
-                <h1>
-                Colibri
-                </h1>
-
-                <h3>
-                We build beautiful experiences
-                </h3>
+                <h1>Colibri</h1>
+                <h3>We build beautiful experiences</h3>
 
 
                 <div class="home-content__button">
@@ -149,8 +144,8 @@
 
         <div class="row section-header bit-narrow" data-aos="fade-up">
             <div class="col-full">
-                <h3 class="subhead">Who We Are</h3>
-                <h1 class="display-1">
+                <h3 class="display-1">Who We Are</h3>
+                <h1 class="subhead">
                 We are Colibri, a design and branding agency with partners worldwide. We design thoughtful digital experiences
                 and beautiful brand aesthetics.
                 </h1>
@@ -219,11 +214,11 @@
 
         <div class="row section-header bit-narrow" data-aos="fade-up">
             <div class="col-full">
-                <h3 class="subhead">What we do</h3>
-                <h1 class="display-1">
+                <h2 class="display-1">What we do</h2>
+                <h3 class="subhead">
                 We take pride in what we do. Our services are designed to help 
                 your business stand out and turn your ideas into digital realities.
-                </h1>
+                </h3>
             </div>
         </div> <!-- end section-header -->
 
@@ -316,10 +311,10 @@
 
         <div class="row section-header has-bottom-sep narrow target-section" data-aos="fade-up">
             <div class="col-full">
-                <h3 class="subhead">Our Works</h3>
-                <h1 class="display-1">
+                <h2 class="display-1">Our Works</h2>
+                <h3 class="subhead">
                 We create brands, products, and experiences that people love. Check out our recent works.
-                </h1>
+                </h3>
             </div>
         </div> <!-- end section-header -->
 
@@ -514,43 +509,6 @@
     </section> <!-- end s-works -->
 
 
-    <!-- clients
-    ================================================== -->
-    <section id="clients" class="s-clients target-section darker">
-
-        <div class="grid-overlay">
-            <div></div>
-        </div>
-
-        <div class="row section-header text-center narrow" data-aos="fade-up">
-            <div class="col-full">
-                <h3 class="subhead">Our Clients</h3>
-                <h1 class="display-1">Who we have work with</h1>
-            </div>
-        </div> <!-- end section-header -->
-
-        <div class="row clients-wrap" data-aos="fade-up">
-            <div class="col-twelve">
-                <ul class="clients">
-                    <li><a href="#0">Uber</a></li>
-                    <li><a href="#0">Spotify</a></li>
-                    <li><a href="#0">Grab</a></li>
-                    <li><a href="#0">Dropbox</a></li>
-                    <li><a href="#0">IBM</a></li>
-                    <li><a href="#0">Microsoft</a></li>
-                    <li><a href="#0">Xiaomi</a></li>
-                    <li><a href="#0">Adidas</a></li>
-                    <li><a href="#0">Mozilla</a></li>
-                    <li><a href="#0">Apple</a></li>
-                    <li><a href="#0">Google</a></li>
-                    <li><a href="#0">Asus</a></li>
-                </ul>
-            </div>
-        </div>
-
-    </section> <!-- end s-clients -->
-
-
     <!-- testimonies
     ================================================== -->
     <section class="s-testimonials">
@@ -594,52 +552,106 @@
 
     </section> <!-- end s-testimonials -->
 
-
     <!-- contact
-    ================================================== -->
-    <section id="contact" class="s-contact target-section">
+   ================================================== -->
+    <section id="contact" class="s_contact">
 
-            <div class="grid-overlay">
-                <div></div>
-            </div>
+        <div class="overlay"></div>
 
-        <div class="row section-header narrow" data-aos="fade-up">
+        <div class="row section-header text-center narrow" data-aos="fade-up">
             <div class="col-full">
-                <h3 class="subhead">Keep In Touch</h3>
-                <h1 class="display-1">Feel free to contact us for any <br> project idea or collaboration</h1>
+                <h2 class="display-1">Contact</h2>
+                <h3 class="subhead">Get In Touch.</h3>
             </div>
         </div> <!-- end section-header -->
 
-        <div class="row contact-main" data-aos="fade-up">
-            <div class="col-full">
-                <p class="contact-email">
-                    <a href="mailto:#0">sayhello@colibri.com</a>
-                </p>
-                <p class="contact-address">
-                Lviv <br>
-                Lviv
-                </p>
-                <p class="contact-numbers">
-                +38 (097) 097 00 00 &nbsp; +38 (097) 097 00 00
-                </p>
+        <div class="row narrow contact-content">
 
-                <ul class="contact-social">
-                    <li>
-                        <a href="#0"><i class="fab fa-facebook"></i></a>
-                    </li>
+            <div class="col-seven tab-full animate-this">
 
-                    <li>
-                        <a href="#0"><i class="fab fa-instagram"></i></a>
-                    </li>
-                    <li>
-                        <a href="#0"><i class="fab fa-telegram" ></i></a>
-                    </li>
-                </ul>
-            </div>
-        </div>
+                <h5>Send Us A Message</h5>
 
-    </section> <!-- end s-contact -->
+                <!-- form -->
+                <form name="contactForm" id="contactForm" method="post">
 
+                    <div class="form-field">
+                        <input name="contactName" type="text" id="contactName" placeholder="Name" value="" minlength="2" required="">
+                    </div>
+
+                    <div class="row">
+                        <div class="col-six tab-full">
+                            <div class="form-field">
+                                <input name="contactEmail" type="email" id="contactEmail" placeholder="Email" value="" required="">
+                            </div>
+                        </div>
+                        <div class="col-six tab-full">
+                            <div class="form-field">
+                                <input name="contactSubject" type="text" id="contactSubject" placeholder="Subject" value="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-field">
+                        <textarea name="contactMessage" id="contactMessage" placeholder="Message" rows="10" cols="50" required=""></textarea>
+                    </div>
+
+                    <div class="form-field">
+                        <button class="submitform">Submit</button>
+
+                        <div style="display: none;" id="submit-loader">
+                            <div class="text-loader">Sending...</div>
+                            <div class="s-loader">
+                                <div class="bounce1"></div>
+                                <div class="bounce2"></div>
+                                <div class="bounce3"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </form> <!-- end form -->
+
+                <!-- contact-warning -->
+                <div id="message-warning"></div>
+
+                <!-- contact-success -->
+                <div style="display:none;" id="message-success">
+                    <i class="fa fa-check"></i>Your message was sent, thank you!<br>
+                </div>
+
+            </div> <!-- end col-seven -->
+
+            <div class="col-four tab-full contact-info end animate-this">
+
+                <h5>Contact Information</h5>
+
+                <div class="cinfo">
+                    <h6>Where to Find Us</h6>
+                    <p>
+                        Ukraine, Lviv<br>
+                    </p>
+                </div> <!-- end cinfo -->
+
+                <div class="cinfo">
+                    <h6>Email Us At</h6>
+                    <p>
+                        someone@infinitysite.com<br>
+                        info@infinitysite.com
+                    </p>
+                </div> <!-- end cinfo -->
+
+                <div class="cinfo">
+                    <h6>Call Us At</h6>
+                    <p>
+                        Phone: (+63) 555 1212<br>
+                        Mobile: (+63) 555 0100<br>
+                    </p>
+                </div>
+
+            </div> <!-- end cinfo -->
+
+        </div> <!-- end row contact-content -->
+
+    </section> <!-- end contact -->
 
     <!-- footer
     ================================================== -->

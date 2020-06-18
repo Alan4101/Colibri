@@ -1422,23 +1422,29 @@ body.menu-is-open {
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
   font-size: 4.6rem;
-  line-height: 1.5;
-  letter-spacing: -0.03rem;
+
   margin-top: 0;
   margin-bottom: 4.8rem;
+
+  color: #793ea5;
+  line-height: 1.333;
+  text-transform: uppercase;
+  letter-spacing: .25rem;
+  position: relative;
+
+  text-align: center;
 }
 
 .subhead {
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
-  font-size: 1.8rem;
-  line-height: 1.333;
-  text-transform: uppercase;
-  letter-spacing: .25rem;
-  color: #793ea5;
+  font-size: 2.4rem;
+  line-height: 1.5;
+  letter-spacing: -0.03rem;
+
   margin-top: 0;
   margin-bottom: 3rem;
-  position: relative;
+  text-align: center;
 }
 
 .item-title {
@@ -3690,7 +3696,15 @@ html.no-csstransitions .home-content__main {
 .contact-social li:last-child {
   margin: 0;
 }
-
+.form-field [name="contactName"], [name="contactEmail"],
+[name="contactSubject"],[name="contactMessage"]{
+  width: 100%;
+}
+.s_contact{
+  position: relative;
+  padding-top: 18rem;
+  padding-bottom: 18rem;
+}
 /* ------------------------------------------------------------------- 
  * responsive:
  * contact
