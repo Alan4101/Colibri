@@ -9,16 +9,15 @@ btnOnSubmit.addEventListener("click", function(e){
     name :    contactForm.contactName.value,
     email :   contactForm.contactEmail.value,
     subject : contactForm.contactSubject.value,
-    message : contactForm.contactMessage.value;
+    message : contactForm.contactMessage.value
   }
+  
   if(name!= "" && email!= "" && subject!= "" && message!= ""){
     try {
       const response = await fetch('send.php', {
       method: 'POST',
       body: JSON.stringify(body), 
-      headers: {
-      ' Content-Type': 'application/json'
-      }
+      headers: { 'Content-Type': 'application/json' }
     });
     const json = await response.json();
     console.log('Succes:', JSON.stringify(json));
