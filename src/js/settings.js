@@ -3,7 +3,7 @@ const contactForm = document.forms.contactForm;
 
 
 btnOnSubmit.addEventListener("click", function(e){
-  e.preventDefault();
+  e.preventDefault(e);
   
   var body = {
     name :    contactForm.contactName.value,
@@ -14,7 +14,7 @@ btnOnSubmit.addEventListener("click", function(e){
   
   if(name!= "" && email!= "" && subject!= "" && message!= ""){
     try {
-      const response = fetch('send.php', {
+      const response = fetch('../send.php', {
       method: 'POST',
       body: JSON.stringify(body), 
       headers: { 'Content-Type': 'application/json' }
