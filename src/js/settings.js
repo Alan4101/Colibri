@@ -5,7 +5,7 @@ const contactForm = document.forms.contactForm;
 btnOnSubmit.addEventListener("click", function(e){
   e.preventDefault();
   
-  var body{
+  var body = {
     name :    contactForm.contactName.value,
     email :   contactForm.contactEmail.value,
     subject : contactForm.contactSubject.value,
