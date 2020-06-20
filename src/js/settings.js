@@ -26,7 +26,7 @@ btnOnSubmit.addEventListener("click", function(e){
       console.error('Big Error:', error);
     }
     reset();
-  }esle{
+  }else{
     console.log("some fiel is empty!")
   }
    
