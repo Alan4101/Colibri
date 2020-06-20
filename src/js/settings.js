@@ -14,7 +14,7 @@ btnOnSubmit.addEventListener("click", function(e){
   
   if(name!= "" && email!= "" && subject!= "" && message!= ""){
     try {
-      const response = await fetch('send.php', {
+      const response = fetch('send.php', {
       method: 'POST',
       body: JSON.stringify(body), 
       headers: { 'Content-Type': 'application/json' }
