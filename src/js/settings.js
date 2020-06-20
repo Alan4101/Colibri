@@ -19,7 +19,7 @@ btnOnSubmit.addEventListener("click", function(e){
       body: JSON.stringify(body), 
       headers: { 'Content-Type': 'application/json' }
     });
-    const json = await response.json();
+    const json = response.json();
     console.log('Succes:', JSON.stringify(json));
     
     } catch (error) {
