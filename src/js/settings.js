@@ -2,8 +2,7 @@ const btnOnSubmit = document.getElementById("btnOnSubmit");
 const contactForm = document.forms.contactForm;
 
 
-btnOnSubmit.addEventListener("click", function(e){
-  e.preventDefault();
+btnOnSubmit.addEventListener("click", function(){
   contactForm.contactName.value = "";
   contactForm.contactEmail.value = "";
   contactForm.contactSubject.value = "";
